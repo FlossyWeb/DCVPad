@@ -12,6 +12,19 @@
 		<link rel="apple-touch-startup-image" href="visuels/startup_image.png" />
 		<title>DCVP</title>
         <script src="phonegap.js"></script>
+        <script type="text/javascript">
+            document.addEventListener("deviceready", function(){
+              if(navigator.network.connection.type == Connection.NONE){
+                $("body").empty().append('<h1>Vous n&rsquo;avez pas de connexion &agrave; internet, cette application en n&eacute;cessite une.</h1>');
+              }
+            });
+		</script>
+        <style type="text/css">
+			h1 {
+				text-align: center;
+				color: #333;
+			}
+		</style>
         <!-- 
         <script type="text/javascript" src="js/jquery.mobile-1.2.0/jquery.mobile-1.2.0.min.js"></script>
         <link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
