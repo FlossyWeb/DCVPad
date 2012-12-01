@@ -13,10 +13,10 @@
 		<title>DCVP</title>
         <script src="jquery_v1.8.3.min.js"></script>
         <script src="phonegap.js"></script>
-        <script type="text/javascript">
+        <script type="text/javascript">		
             document.addEventListener("deviceready", function(){
               if(navigator.network.connection.type == Connection.NONE){
-                $("body").empty().append('<h1>Vous n&rsquo;avez pas de connexion &agrave; internet, cette application en n&eacute;cessite une.</h1>');
+                $("body").empty().append('<img src="no_network.png" onClick="window.location.reload()" />');
               }
             });
 		</script>
