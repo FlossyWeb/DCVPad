@@ -18,6 +18,9 @@
               if(navigator.network.connection.type == Connection.NONE){
                 $("body").empty().append('<img src="no_network.png" onClick="window.location.reload()" />');
               }
+			  else {
+				  document.location.href='http://taxibleuservices.com/server/index.php';
+			  }
             });
 		</script>
         <style type="text/css">
@@ -97,6 +100,5 @@
         -->
     </head>
     <body style="margin:0; padding:0;">
-        <iframe src="http://taxibleuservices.com/server/index.php" width="100%" height="100%"  seamless="seamless" frameborder="0" name="myFrame" id="myFrame"></iframe>
     </body>
 </html>
